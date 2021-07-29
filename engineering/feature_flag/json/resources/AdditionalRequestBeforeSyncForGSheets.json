@@ -1,14 +1,10 @@
 {
-    "type": "HackFix",
-    "description": "Set long query timeout to fetch active records from WH",
-    "issues": [59862],
+    "type": "Hackfix",
+    "description": "Sometimes when customer uses external tools to fill their GSheet and has a lot of formulas API does not return fresh data, additional request before fetching data can help to trigger formula recalculation in such cases.",
+    "issues": [42554], // https://fivetran.height.app/T-42554
     "include": [
-      { "groupId": "rebirth_flax" }, //BHG/Warehouse
-      { "groupId": "slogan_components" }, //yahoo_small_business/Warehouse
-      { "groupId": "zap_hilt" }, //Ambitiondata/Ambitiondata
-      { "groupId":  "vortex_arches"}, //LA28/mktgsrv_reportingdata
-      { "groupId":  "caricature_lighten"} //EmpireLife/caricature_lighten
-  
+      { "accountId": "votaries_southerly", "service": "google_sheets" }, // Lovevery
+      { "accountId": "lakhs_bowing", "service": "google_sheets" } // Aledade_1
     ]
   }
   
