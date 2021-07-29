@@ -1,0 +1,14 @@
+{
+    "type": "HackFix",
+    "description": "Set long query timeout to fetch active records from WH",
+    "issues": [59862],
+    "include": [
+      { "groupId": "rebirth_flax" }, //BHG/Warehouse
+      { "groupId": "slogan_components" }, //yahoo_small_business/Warehouse
+      { "groupId": "zap_hilt" }, //Ambitiondata/Ambitiondata
+      { "groupId":  "vortex_arches"}, //LA28/mktgsrv_reportingdata
+      { "groupId":  "caricature_lighten"} //EmpireLife/caricature_lighten
+  
+    ]
+  }
+  
