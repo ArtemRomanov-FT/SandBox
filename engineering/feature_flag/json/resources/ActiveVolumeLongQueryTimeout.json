@@ -2,7 +2,7 @@
     "type": "HackFix",
     "description": "Set long query timeout to fetch active records from WH",
     "issues": [59862],
-    "include": [
+    "exclude": [
       { "groupId": "rebirth_flax" }, //BHG/Warehouse
       { "groupId": "slogan_components" }, //yahoo_small_business/Warehouse
       { "groupId": "zap_hilt" }, //Ambitiondata/Ambitiondata
