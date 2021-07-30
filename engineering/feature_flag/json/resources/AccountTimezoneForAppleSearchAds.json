@@ -5,7 +5,7 @@
     "include": [
       { "groupId": "scornfully_citizens" }, // Invoice_Simple/Production
       { "groupId": "expel_parotid" }, // Chime/Warehouse
-      { "groupId": "surplus_going" } //Camelot/Camelot_Snowflake
+      { "groupId": "surplus_going" }, //Camelot/Camelot_Snowflake
       { "groupId": "surplus_going" } //Camelot/Camelot_Snowflake
     ]
   }
