@@ -4,7 +4,7 @@
     "issues": [42554], // https://fivetran.height.app/T-42554
     "include": [
       { "accountId": "votaries_southerly", "service": "google_sheets" }, // Lovevery
-      { "accountId": "lakhs_bowing", "service": "google_sheets" } // Aledade_1
+      { "accountId": "lakhs_bowing", "service": "google_sheets" }, // Aledade_1
       { "accountId": "lakhs_bowing", "service": "google_sheets" } // Aledade_1
       
     ]
