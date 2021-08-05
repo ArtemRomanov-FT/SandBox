@@ -1,7 +1,7 @@
 {
-    "type": "Testing",
+    "type": "",
     "description": "Configure browser session timeout from Account Settings page",
-    "issues": [40451, 61170],
+    "issues": [],
     "include": [
       { "accountId": "1k56c2c4xlti6_acc" }, // Fivetran
       { "accountId": "bottle_jelly" }, // Okta
