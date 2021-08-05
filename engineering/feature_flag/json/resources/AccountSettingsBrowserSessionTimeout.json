@@ -7,7 +7,7 @@
       { "accountId": "bottle_jelly" }, // Okta
       { "accountId": "treaty_canned" } // NA_Enterprise
       { "accountId": "treaty_canned" } // NA_Enterprise
-      { "accountId": "treaty_canned" } // NA_Enterprise
+      { "accountId": "treaty_canned" }DESCRIPTION_HEADER_PATTERN // NA_Enterprise
     ]
   }
   
