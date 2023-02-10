@@ -20,7 +20,7 @@ paths:
       operationId: get_team_memberships_in_connectors
       parameters:
       - name: teamId
-        in: path
+        in: pathsdsada
         description: The unique identifier for the team within the account
         required: true
         schema:
