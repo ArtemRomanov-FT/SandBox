@@ -30,7 +30,7 @@ paths:
         description: Paging cursor, [read more about pagination](https://fivetran.com/docs/rest-api/pagination)
         required: false
         schema:
-          type: string123131
+          type: string
       - name: limit
         in: query
         description: Number of records to fetch per page. Accepts a number in the
@@ -4258,6 +4258,7 @@ components:
           cloudfront: '#/components/schemas/cloudfront_NewConnectorRequestV2'
           concur: '#/components/schemas/concur_NewConnectorRequestV2'
           confluent_cloud: '#/components/schemas/confluent_cloud_NewConnectorRequestV2'
+          cosmos: '#/components/schemas/cosmos_NewConnectorRequestV2'
           coupa: '#/components/schemas/coupa_NewConnectorRequestV2'
           criteo: '#/components/schemas/criteo_NewConnectorRequestV2'
           delighted: '#/components/schemas/delighted_NewConnectorRequestV2'
@@ -4269,8 +4270,10 @@ components:
           dynamics_365: '#/components/schemas/dynamics_365_NewConnectorRequestV2'
           dynamics_365_fo: '#/components/schemas/dynamics_365_fo_NewConnectorRequestV2'
           dynamodb: '#/components/schemas/dynamodb_NewConnectorRequestV2'
+          elastic_cloud: '#/components/schemas/elastic_cloud_NewConnectorRequestV2'
           eloqua: '#/components/schemas/eloqua_NewConnectorRequestV2'
           email: '#/components/schemas/email_NewConnectorRequestV2'
+          es_self_hosted: '#/components/schemas/es_self_hosted_NewConnectorRequestV2'
           facebook: '#/components/schemas/facebook_NewConnectorRequestV2'
           facebook_ad_account: '#/components/schemas/facebook_ad_account_NewConnectorRequestV2'
           facebook_ads: '#/components/schemas/facebook_ads_NewConnectorRequestV2'
@@ -4278,6 +4281,7 @@ components:
           financial_force: '#/components/schemas/financial_force_NewConnectorRequestV2'
           fivetran_log: '#/components/schemas/fivetran_log_NewConnectorRequestV2'
           freshdesk: '#/components/schemas/freshdesk_NewConnectorRequestV2'
+          freshservice: '#/components/schemas/freshservice_NewConnectorRequestV2'
           front: '#/components/schemas/front_NewConnectorRequestV2'
           ftp: '#/components/schemas/ftp_NewConnectorRequestV2'
           gainsight_customer_success: '#/components/schemas/gainsight_customer_success_NewConnectorRequestV2'
@@ -4336,10 +4340,16 @@ components:
           mysql_azure: '#/components/schemas/mysql_azure_NewConnectorRequestV2'
           mysql_rds: '#/components/schemas/mysql_rds_NewConnectorRequestV2'
           netsuite_suiteanalytics: '#/components/schemas/netsuite_suiteanalytics_NewConnectorRequestV2'
+          okta: '#/components/schemas/okta_NewConnectorRequestV2'
           one_drive: '#/components/schemas/one_drive_NewConnectorRequestV2'
+          opendistro: '#/components/schemas/opendistro_NewConnectorRequestV2'
+          opensearch: '#/components/schemas/opensearch_NewConnectorRequestV2'
           optimizely: '#/components/schemas/optimizely_NewConnectorRequestV2'
           oracle: '#/components/schemas/oracle_NewConnectorRequestV2'
           oracle_ebs: '#/components/schemas/oracle_ebs_NewConnectorRequestV2'
+          oracle_fusion_cloud_apps_crm: '#/components/schemas/oracle_fusion_cloud_apps_crm_NewConnectorRequestV2'
+          oracle_fusion_cloud_apps_fscm: '#/components/schemas/oracle_fusion_cloud_apps_fscm_NewConnectorRequestV2'
+          oracle_fusion_cloud_apps_hcm: '#/components/schemas/oracle_fusion_cloud_apps_hcm_NewConnectorRequestV2'
           oracle_hva: '#/components/schemas/oracle_hva_NewConnectorRequestV2'
           oracle_rac: '#/components/schemas/oracle_rac_NewConnectorRequestV2'
           oracle_rds: '#/components/schemas/oracle_rds_NewConnectorRequestV2'
@@ -4359,12 +4369,14 @@ components:
           recharge: '#/components/schemas/recharge_NewConnectorRequestV2'
           recurly: '#/components/schemas/recurly_NewConnectorRequestV2'
           reddit_ads: '#/components/schemas/reddit_ads_NewConnectorRequestV2'
+          ringcentral: '#/components/schemas/ringcentral_NewConnectorRequestV2'
           s3: '#/components/schemas/s3_NewConnectorRequestV2'
           sage_intacct: '#/components/schemas/sage_intacct_NewConnectorRequestV2'
           sailthru: '#/components/schemas/sailthru_NewConnectorRequestV2'
           salesforce: '#/components/schemas/salesforce_NewConnectorRequestV2'
           salesforce_marketing_cloud: '#/components/schemas/salesforce_marketing_cloud_NewConnectorRequestV2'
           salesforce_sandbox: '#/components/schemas/salesforce_sandbox_NewConnectorRequestV2'
+          salesloft: '#/components/schemas/salesloft_NewConnectorRequestV2'
           sap_business_by_design: '#/components/schemas/sap_business_by_design_NewConnectorRequestV2'
           segment: '#/components/schemas/segment_NewConnectorRequestV2'
           sendgrid: '#/components/schemas/sendgrid_NewConnectorRequestV2'
@@ -4652,6 +4664,7 @@ components:
           cloudfront: '#/components/schemas/cloudfront_ConnectorResponseV2'
           concur: '#/components/schemas/concur_ConnectorResponseV2'
           confluent_cloud: '#/components/schemas/confluent_cloud_ConnectorResponseV2'
+          cosmos: '#/components/schemas/cosmos_ConnectorResponseV2'
           coupa: '#/components/schemas/coupa_ConnectorResponseV2'
           criteo: '#/components/schemas/criteo_ConnectorResponseV2'
           delighted: '#/components/schemas/delighted_ConnectorResponseV2'
@@ -4663,8 +4676,10 @@ components:
           dynamics_365: '#/components/schemas/dynamics_365_ConnectorResponseV2'
           dynamics_365_fo: '#/components/schemas/dynamics_365_fo_ConnectorResponseV2'
           dynamodb: '#/components/schemas/dynamodb_ConnectorResponseV2'
+          elastic_cloud: '#/components/schemas/elastic_cloud_ConnectorResponseV2'
           eloqua: '#/components/schemas/eloqua_ConnectorResponseV2'
           email: '#/components/schemas/email_ConnectorResponseV2'
+          es_self_hosted: '#/components/schemas/es_self_hosted_ConnectorResponseV2'
           facebook: '#/components/schemas/facebook_ConnectorResponseV2'
           facebook_ad_account: '#/components/schemas/facebook_ad_account_ConnectorResponseV2'
           facebook_ads: '#/components/schemas/facebook_ads_ConnectorResponseV2'
@@ -4672,6 +4687,7 @@ components:
           financial_force: '#/components/schemas/financial_force_ConnectorResponseV2'
           fivetran_log: '#/components/schemas/fivetran_log_ConnectorResponseV2'
           freshdesk: '#/components/schemas/freshdesk_ConnectorResponseV2'
+          freshservice: '#/components/schemas/freshservice_ConnectorResponseV2'
           front: '#/components/schemas/front_ConnectorResponseV2'
           ftp: '#/components/schemas/ftp_ConnectorResponseV2'
           gainsight_customer_success: '#/components/schemas/gainsight_customer_success_ConnectorResponseV2'
@@ -4730,10 +4746,16 @@ components:
           mysql_azure: '#/components/schemas/mysql_azure_ConnectorResponseV2'
           mysql_rds: '#/components/schemas/mysql_rds_ConnectorResponseV2'
           netsuite_suiteanalytics: '#/components/schemas/netsuite_suiteanalytics_ConnectorResponseV2'
+          okta: '#/components/schemas/okta_ConnectorResponseV2'
           one_drive: '#/components/schemas/one_drive_ConnectorResponseV2'
+          opendistro: '#/components/schemas/opendistro_ConnectorResponseV2'
+          opensearch: '#/components/schemas/opensearch_ConnectorResponseV2'
           optimizely: '#/components/schemas/optimizely_ConnectorResponseV2'
           oracle: '#/components/schemas/oracle_ConnectorResponseV2'
           oracle_ebs: '#/components/schemas/oracle_ebs_ConnectorResponseV2'
+          oracle_fusion_cloud_apps_crm: '#/components/schemas/oracle_fusion_cloud_apps_crm_ConnectorResponseV2'
+          oracle_fusion_cloud_apps_fscm: '#/components/schemas/oracle_fusion_cloud_apps_fscm_ConnectorResponseV2'
+          oracle_fusion_cloud_apps_hcm: '#/components/schemas/oracle_fusion_cloud_apps_hcm_ConnectorResponseV2'
           oracle_hva: '#/components/schemas/oracle_hva_ConnectorResponseV2'
           oracle_rac: '#/components/schemas/oracle_rac_ConnectorResponseV2'
           oracle_rds: '#/components/schemas/oracle_rds_ConnectorResponseV2'
@@ -4753,12 +4775,14 @@ components:
           recharge: '#/components/schemas/recharge_ConnectorResponseV2'
           recurly: '#/components/schemas/recurly_ConnectorResponseV2'
           reddit_ads: '#/components/schemas/reddit_ads_ConnectorResponseV2'
+          ringcentral: '#/components/schemas/ringcentral_ConnectorResponseV2'
           s3: '#/components/schemas/s3_ConnectorResponseV2'
           sage_intacct: '#/components/schemas/sage_intacct_ConnectorResponseV2'
           sailthru: '#/components/schemas/sailthru_ConnectorResponseV2'
           salesforce: '#/components/schemas/salesforce_ConnectorResponseV2'
           salesforce_marketing_cloud: '#/components/schemas/salesforce_marketing_cloud_ConnectorResponseV2'
           salesforce_sandbox: '#/components/schemas/salesforce_sandbox_ConnectorResponseV2'
+          salesloft: '#/components/schemas/salesloft_ConnectorResponseV2'
           sap_business_by_design: '#/components/schemas/sap_business_by_design_ConnectorResponseV2'
           segment: '#/components/schemas/segment_ConnectorResponseV2'
           sendgrid: '#/components/schemas/sendgrid_ConnectorResponseV2'
@@ -5952,14 +5976,6 @@ components:
       - given_name
       type: object
       properties:
-        family_name:
-          type: string
-          description: The last name of the user.
-          example: string
-        given_name:
-          type: string
-          description: The first name of the user.
-          example: string
         phone:
           type: string
           description: The phone number of the user.
@@ -5972,6 +5988,14 @@ components:
         role:
           type: string
           description: 'The role that you would like to assign to the user '
+        family_name:
+          type: string
+          description: The last name of the user.
+          example: string
+        given_name:
+          type: string
+          description: The first name of the user.
+          example: string
     WebhookRequest:
       type: object
       properties:
@@ -8575,12 +8599,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -8926,6 +8944,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -9156,12 +9175,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -9415,15 +9428,15 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
-              title: ""
-              type: string
-              description: ""
             user:
               title: ""
               type: string
               description: The user name.  For Azure Databases, the format must be
                 `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -9526,11 +9539,11 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
+            user:
               title: ""
               type: string
               description: ""
-            user:
+            sap_schema:
               title: ""
               type: string
               description: ""
@@ -9711,6 +9724,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             on_error:
               title: ""
               type: object
@@ -10109,6 +10123,88 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/confluent_cloud_config_V2'
+    cosmos_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            public_key:
+              title: ""
+              type: string
+              description: ""
+            connection_type:
+              title: ""
+              type: object
+              description: Indicates the connection type the customer would like Fivetran
+                to use in order to connect to the source database
+              enum:
+              - Directly
+              - PrivateLink
+              - SshTunnel
+            account_key:
+              title: ""
+              type: string
+              description: Shared secret allowing any management or data operation
+                to Cosmos resource.
+            always_encrypted:
+              title: ""
+              type: boolean
+              description: ""
+            uri:
+              title: ""
+              type: string
+              description: Cosmos resource instance address.
+            tunnel_user:
+              title: ""
+              type: string
+              description: SSH user, specify only to connect via an SSH tunnel.
+            database:
+              title: ""
+              type: string
+              description: ""
+            password:
+              title: ""
+              type: string
+              description: ""
+            tunnel_port:
+              title: ""
+              type: integer
+              description: SSH port, specify only to connect via an SSH tunnel.
+              format: int32
+            port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            host:
+              title: ""
+              type: string
+              description: ""
+            tunnel_host:
+              title: ""
+              type: string
+              description: SSH host, specify only to connect via an SSH tunnel (do
+                not use a load balancer).
+            user:
+              title: ""
+              type: string
+              description: ""
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            prefix:
+              title: Destination schema prefix
+              type: string
+              description: Destination schema prefix. Prefix for each replicated schema.
+                For example with prefix 'x', source schemas 'foo' and 'bar' get replicated
+                as 'x_foo' and 'x_bar'. The prefix is permanent and cannot be changed
+                after connection creation
+          description: ""
+    cosmos_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/cosmos_config_V2'
     coupa_config_V2:
       properties:
         config:
@@ -10658,13 +10754,26 @@ components:
         auth:
           type: object
           properties:
-            client_secret:
+            access_token:
               title: ""
               type: string
               description: ""
-            client_id:
+            refresh_token:
               title: ""
               type: string
+              description: ""
+            client_access:
+              title: ""
+              type: object
+              properties:
+                client_secret:
+                  title: ""
+                  type: string
+                  description: ""
+                client_id:
+                  title: ""
+                  type: string
+                  description: ""
               description: ""
           description: ""
         destination_schema:
@@ -10761,6 +10870,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             on_error:
               title: ""
               type: object
@@ -10948,14 +11058,14 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
-              title: ""
-              type: string
-              description: ""
             user:
               title: ""
               type: string
               description: The user name. The format must be `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -11033,6 +11143,71 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/dynamodb_config_V2'
+    elastic_cloud_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            tunnel_port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: ""
+            password:
+              title: ""
+              type: string
+              description: ""
+            connection_type:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - Directly
+              - PrivateLink
+              - SshTunnel
+            port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            host:
+              title: ""
+              type: string
+              description: ""
+            tunnel_host:
+              title: ""
+              type: string
+              description: ""
+            always_encrypted:
+              title: ""
+              type: boolean
+              description: ""
+            user:
+              title: ""
+              type: string
+              description: ""
+            tunnel_user:
+              title: ""
+              type: string
+              description: ""
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    elastic_cloud_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/elastic_cloud_config_V2'
     eloqua_config_V2:
       properties:
         config:
@@ -11124,6 +11299,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -11186,6 +11362,71 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/email_config_V2'
+    es_self_hosted_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            tunnel_port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: ""
+            password:
+              title: ""
+              type: string
+              description: ""
+            connection_type:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - Directly
+              - PrivateLink
+              - SshTunnel
+            port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            host:
+              title: ""
+              type: string
+              description: ""
+            tunnel_host:
+              title: ""
+              type: string
+              description: ""
+            always_encrypted:
+              title: ""
+              type: boolean
+              description: ""
+            user:
+              title: ""
+              type: string
+              description: ""
+            tunnel_user:
+              title: ""
+              type: string
+              description: ""
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    es_self_hosted_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/es_self_hosted_config_V2'
     facebook_config_V2:
       properties:
         config:
@@ -12012,6 +12253,33 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/freshdesk_config_V2'
+    freshservice_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            api_key:
+              title: ""
+              type: string
+              description: Your Freshservice API Key.
+            subdomain:
+              title: ""
+              type: string
+              description: Your company's freshservice subdomain (usually **company**.freshservice.com).
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    freshservice_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/freshservice_config_V2'
     front_config_V2:
       properties:
         config:
@@ -12122,6 +12390,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -12296,6 +12565,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -13283,12 +13553,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -13401,15 +13665,15 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
-              title: ""
-              type: string
-              description: ""
             user:
               title: ""
               type: string
               description: The user name. For Azure Databases, the format must be
                 `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -13509,44 +13773,9 @@ components:
                   when `config_method` is set to `CREATE_NEW`.
             report_type:
               title: ""
-              type: object
+              type: string
               description: The type of the report to create. This is a required parameter
                 when `config_method` is set to `CREATE_NEW`.
-              enum:
-              - TYPE_ACTIVE_GRP
-              - TYPE_AUDIENCE_COMPOSITION
-              - TYPE_AUDIENCE_PERFORMANCE
-              - TYPE_CLIENT_SAFE
-              - TYPE_COMSCORE_VCE
-              - TYPE_CROSS_FEE
-              - TYPE_CROSS_PARTNER
-              - TYPE_CROSS_PARTNER_THIRD_PARTY_DATA_PROVIDER
-              - TYPE_ESTIMATED_CONVERSION
-              - TYPE_FEE
-              - TYPE_GENERAL
-              - TYPE_INVENTORY_AVAILABILITY
-              - TYPE_KEYWORD
-              - TYPE_LINEAR_TV_SEARCH_LIFT
-              - TYPE_NIELSEN_AUDIENCE_PROFILE
-              - TYPE_NIELSEN_DAILY_REACH_BUILD
-              - TYPE_NIELSEN_ONLINE_GLOBAL_MARKET
-              - TYPE_NIELSEN_SITE
-              - TYPE_NOT_SUPPORTED
-              - TYPE_ORDER_ID
-              - TYPE_PAGE_CATEGORY
-              - TYPE_PATH
-              - TYPE_PATH_ATTRIBUTION
-              - TYPE_PETRA_NIELSEN_AUDIENCE_PROFILE
-              - TYPE_PETRA_NIELSEN_DAILY_REACH_BUILD
-              - TYPE_PETRA_NIELSEN_ONLINE_GLOBAL_MARKET
-              - TYPE_PIXEL_LOAD
-              - TYPE_REACH_AND_FREQUENCY
-              - TYPE_REACH_AUDIENCE
-              - TYPE_THIRD_PARTY_DATA_PROVIDER
-              - TYPE_TRUEVIEW
-              - TYPE_TRUEVIEW_IAR
-              - TYPE_VERIFICATION
-              - TYPE_YOUTUBE_VERTICAL
             dimensions:
               title: ""
               type: array
@@ -13666,6 +13895,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             on_error:
               title: ""
               type: object
@@ -14203,12 +14433,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -14608,6 +14832,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -14787,7 +15012,6 @@ components:
               - DAY_7
               - DAY_28
               - DAY_30
-              - DAY_90
             ad_analytics:
               title: ""
               type: object
@@ -14806,7 +15030,6 @@ components:
               - DAY_7
               - DAY_28
               - DAY_30
-              - DAY_90
             accounts:
               title: ""
               type: array
@@ -16115,6 +16338,33 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/netsuite_suiteanalytics_config_V2'
+    okta_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            api_key:
+              title: ""
+              type: string
+              description: Your Okta API key.
+            sub_domain:
+              title: ""
+              type: string
+              description: Your Okta sub-domain.
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    okta_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/okta_config_V2'
     one_drive_config_V2:
       properties:
         config:
@@ -16171,6 +16421,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             on_error:
               title: ""
               type: object
@@ -16223,6 +16474,136 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/one_drive_config_V2'
+    opendistro_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            tunnel_port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: ""
+            password:
+              title: ""
+              type: string
+              description: ""
+            connection_type:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - Directly
+              - PrivateLink
+              - SshTunnel
+            port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            host:
+              title: ""
+              type: string
+              description: ""
+            tunnel_host:
+              title: ""
+              type: string
+              description: ""
+            always_encrypted:
+              title: ""
+              type: boolean
+              description: ""
+            user:
+              title: ""
+              type: string
+              description: ""
+            tunnel_user:
+              title: ""
+              type: string
+              description: ""
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    opendistro_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/opendistro_config_V2'
+    opensearch_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            tunnel_port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: ""
+            password:
+              title: ""
+              type: string
+              description: ""
+            connection_type:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - Directly
+              - PrivateLink
+              - SshTunnel
+            port:
+              title: ""
+              type: integer
+              description: ""
+              format: int32
+            host:
+              title: ""
+              type: string
+              description: ""
+            tunnel_host:
+              title: ""
+              type: string
+              description: ""
+            always_encrypted:
+              title: ""
+              type: boolean
+              description: ""
+            user:
+              title: ""
+              type: string
+              description: ""
+            tunnel_user:
+              title: ""
+              type: string
+              description: ""
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    opensearch_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/opensearch_config_V2'
     optimizely_config_V2:
       properties:
         config:
@@ -16274,9 +16655,6 @@ components:
               title: ""
               type: string
               description: ""
-            agent_user:
-              title: ""
-              type: string
             connection_type:
               title: ""
               type: object
@@ -16292,28 +16670,22 @@ components:
             update_method:
               title: ""
               type: object
-              description: ""
+              description: The method used to detect new or changed rows. Supported
+                values:<br> - `LOGMINER` - Fivetran uses LogMiner, a utility that
+                is part of Oracle Database, to detect modified rows in the source
+                tables. <br> - `TELEPORT` - Fivetran's proprietary replication method
+                that uses compressed snapshots to detect and apply changes.
               enum:
-              - FLASHBACK
               - LOGMINER
               - TELEPORT
               - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
-            use_oracle_rac:
-              title: ""
-              type: boolean
               description: ""
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
@@ -16345,30 +16717,10 @@ components:
               type: string
               description: SSH host, specify only to connect via an SSH tunnel (do
                 not use a load balancer).
-            tns:
-              title: ""
-              type: string
-            agent_ora_home:
-              title: ""
-              type: string
-            agent_port:
-              title: ""
-              type: integer
-              format: int32
-            sap_user:
-              title: ""
-              type: string
-              description: ""
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
-              title: ""
-              type: string
           description: ""
         destination_schema:
           type: object
@@ -16394,9 +16746,6 @@ components:
               title: ""
               type: string
               description: ""
-            agent_user:
-              title: ""
-              type: string
             connection_type:
               title: ""
               type: object
@@ -16412,28 +16761,22 @@ components:
             update_method:
               title: ""
               type: object
-              description: ""
+              description: The method used to detect new or changed rows. Supported
+                values:<br> - `LOGMINER` - Fivetran uses LogMiner, a utility that
+                is part of Oracle Database, to detect modified rows in the source
+                tables. <br> - `TELEPORT` - Fivetran's proprietary replication method
+                that uses compressed snapshots to detect and apply changes.
               enum:
-              - FLASHBACK
               - LOGMINER
               - TELEPORT
               - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
-            use_oracle_rac:
-              title: ""
-              type: boolean
               description: ""
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
@@ -16465,30 +16808,10 @@ components:
               type: string
               description: SSH host, specify only to connect via an SSH tunnel (do
                 not use a load balancer).
-            tns:
-              title: ""
-              type: string
-            agent_ora_home:
-              title: ""
-              type: string
-            agent_port:
-              title: ""
-              type: integer
-              format: int32
-            sap_user:
-              title: ""
-              type: string
-              description: ""
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
-              title: ""
-              type: string
           description: ""
         destination_schema:
           type: object
@@ -16505,6 +16828,99 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/oracle_ebs_config_V2'
+    oracle_fusion_cloud_apps_crm_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            password:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud user password.
+            server_url:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud Instance URL.
+            username:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud username.
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    oracle_fusion_cloud_apps_crm_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_crm_config_V2'
+    oracle_fusion_cloud_apps_fscm_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            password:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud user password.
+            server_url:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud Instance URL.
+            username:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud username.
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    oracle_fusion_cloud_apps_fscm_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_fscm_config_V2'
+    oracle_fusion_cloud_apps_hcm_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            password:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud user password.
+            server_url:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud Instance URL.
+            username:
+              title: ""
+              type: string
+              description: The Oracle Fusion Cloud username.
+          description: ""
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    oracle_fusion_cloud_apps_hcm_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_hcm_config_V2'
     oracle_hva_config_V2:
       properties:
         config:
@@ -16517,6 +16933,60 @@ components:
             agent_user:
               title: ""
               type: string
+              description: The agent's user.
+            update_method:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - LOGMINER
+              - TELEPORT
+              - DIRECT_CAPTURE
+            agent_password:
+              title: ""
+              type: string
+              description: The agent user's password. It should have a minimum length
+                of 10 characters.
+            agent_public_cert:
+              title: ""
+              type: string
+              description: The agent public certificate.
+            tunnel_port:
+              title: ""
+              type: integer
+              description: SSH port, specify only to connect via an SSH tunnel.
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: The database name.
+            password:
+              title: ""
+              type: string
+              description: The user's password.
+            asm_tns:
+              title: ""
+              type: string
+              description: ASM TNS.
+            asm_option:
+              title: ""
+              type: boolean
+              description: 'Default value: `false`. Set to `true` if you''re using
+                ASM on a non-RAC instance.'
+            host:
+              title: ""
+              type: string
+              description: DB instance host or IP address.
+            agent_host:
+              title: ""
+              type: string
+              description: The host of the agent. This is the same as database host,
+                since the agent must be installed in the same machine as source database.
+            asm_password:
+              title: ""
+              type: string
+              description: ASM password. Mandatory if `use_oracle_rac` or `asm_option`
+                is set to `true`.
             connection_type:
               title: ""
               type: object
@@ -16529,57 +16999,28 @@ components:
               - Directly
               - PrivateLink
               - SshTunnel
-            update_method:
-              title: ""
-              type: object
-              description: ""
-              enum:
-              - FLASHBACK
-              - LOGMINER
-              - TELEPORT
-              - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
+              description: (Multi-tenant databases only) The database's PDB name.
+                Exclude this parameter for single-tenant databases.
             use_oracle_rac:
               title: ""
               type: boolean
-              description: ""
+              description: 'Default value: `false`. Set to `true` if you''re using
+                a RAC instance.'
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
               description: SSH user, specify only to connect via an SSH tunnel.
-            database:
-              title: ""
-              type: string
-              description: The database name.
-            password:
-              title: ""
-              type: string
-              description: The user's password.
-            tunnel_port:
-              title: ""
-              type: integer
-              description: SSH port, specify only to connect via an SSH tunnel.
-              format: int32
             port:
               title: ""
               type: integer
               description: The port number.
               format: int32
-            host:
-              title: ""
-              type: string
-              description: DB instance host or IP address.
             tunnel_host:
               title: ""
               type: string
@@ -16593,24 +17034,25 @@ components:
             agent_ora_home:
               title: ""
               type: string
+              description: The home directory of the Oracle database.
             agent_port:
               title: ""
               type: integer
+              description: The port number of the agent.
               format: int32
-            sap_user:
-              title: ""
-              type: string
-              description: ""
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
+            asm_oracle_home:
               title: ""
               type: string
+              description: ASM Oracle Home path.
+            asm_user:
+              title: ""
+              type: string
+              description: ASM user. Mandatory if `use_oracle_rac` or `asm_option`
+                is set to `true`.
           description: ""
         destination_schema:
           type: object
@@ -16636,9 +17078,6 @@ components:
               title: ""
               type: string
               description: ""
-            agent_user:
-              title: ""
-              type: string
             connection_type:
               title: ""
               type: object
@@ -16654,28 +17093,22 @@ components:
             update_method:
               title: ""
               type: object
-              description: ""
+              description: The method used to detect new or changed rows. Supported
+                values:<br> - `LOGMINER` - Fivetran uses LogMiner, a utility that
+                is part of Oracle Database, to detect modified rows in the source
+                tables. <br> - `TELEPORT` - Fivetran's proprietary replication method
+                that uses compressed snapshots to detect and apply changes.
               enum:
-              - FLASHBACK
               - LOGMINER
               - TELEPORT
               - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
-            use_oracle_rac:
-              title: ""
-              type: boolean
               description: ""
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
@@ -16707,30 +17140,10 @@ components:
               type: string
               description: SSH host, specify only to connect via an SSH tunnel (do
                 not use a load balancer).
-            tns:
-              title: ""
-              type: string
-            agent_ora_home:
-              title: ""
-              type: string
-            agent_port:
-              title: ""
-              type: integer
-              format: int32
-            sap_user:
-              title: ""
-              type: string
-              description: ""
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
-              title: ""
-              type: string
           description: ""
         destination_schema:
           type: object
@@ -16756,9 +17169,6 @@ components:
               title: ""
               type: string
               description: ""
-            agent_user:
-              title: ""
-              type: string
             connection_type:
               title: ""
               type: object
@@ -16774,28 +17184,22 @@ components:
             update_method:
               title: ""
               type: object
-              description: ""
+              description: The method used to detect new or changed rows. Supported
+                values:<br> - `LOGMINER` - Fivetran uses LogMiner, a utility that
+                is part of Oracle Database, to detect modified rows in the source
+                tables. <br> - `TELEPORT` - Fivetran's proprietary replication method
+                that uses compressed snapshots to detect and apply changes.
               enum:
-              - FLASHBACK
               - LOGMINER
               - TELEPORT
               - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
-            use_oracle_rac:
-              title: ""
-              type: boolean
               description: ""
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
@@ -16827,30 +17231,10 @@ components:
               type: string
               description: SSH host, specify only to connect via an SSH tunnel (do
                 not use a load balancer).
-            tns:
-              title: ""
-              type: string
-            agent_ora_home:
-              title: ""
-              type: string
-            agent_port:
-              title: ""
-              type: integer
-              format: int32
-            sap_user:
-              title: ""
-              type: string
-              description: ""
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
-              title: ""
-              type: string
           description: ""
         destination_schema:
           type: object
@@ -16879,6 +17263,51 @@ components:
             agent_user:
               title: ""
               type: string
+            update_method:
+              title: ""
+              type: object
+              description: ""
+              enum:
+              - LOGMINER
+              - TELEPORT
+              - DIRECT_CAPTURE
+            agent_password:
+              title: ""
+              type: string
+            agent_public_cert:
+              title: ""
+              type: string
+            tunnel_port:
+              title: ""
+              type: integer
+              description: SSH port, specify only to connect via an SSH tunnel.
+              format: int32
+            database:
+              title: ""
+              type: string
+              description: The database name.
+            password:
+              title: ""
+              type: string
+              description: The user's password.
+            asm_tns:
+              title: ""
+              type: string
+              description: ""
+            asm_option:
+              title: ""
+              type: boolean
+              description: ""
+            host:
+              title: ""
+              type: string
+              description: DB instance host or IP address.
+            agent_host:
+              title: ""
+              type: string
+            asm_password:
+              title: ""
+              type: string
             connection_type:
               title: ""
               type: object
@@ -16887,18 +17316,6 @@ components:
               - Directly
               - PrivateLink
               - SshTunnel
-            update_method:
-              title: ""
-              type: object
-              description: ""
-              enum:
-              - FLASHBACK
-              - LOGMINER
-              - TELEPORT
-              - DIRECT_CAPTURE
-            agent_password:
-              title: ""
-              type: string
             pdb_name:
               title: ""
               type: string
@@ -16909,35 +17326,15 @@ components:
             always_encrypted:
               title: ""
               type: boolean
-            agent_public_cert:
-              title: ""
-              type: string
             tunnel_user:
               title: ""
               type: string
               description: SSH user, specify only to connect via an SSH tunnel.
-            database:
-              title: ""
-              type: string
-              description: The database name.
-            password:
-              title: ""
-              type: string
-              description: The user's password.
-            tunnel_port:
-              title: ""
-              type: integer
-              description: SSH port, specify only to connect via an SSH tunnel.
-              format: int32
             port:
               title: ""
               type: integer
               description: The port number.
               format: int32
-            host:
-              title: ""
-              type: string
-              description: DB instance host or IP address.
             tunnel_host:
               title: ""
               type: string
@@ -16956,16 +17353,18 @@ components:
             sap_user:
               title: ""
               type: string
-            agent_host:
-              title: ""
-              type: string
             user:
               title: ""
               type: string
               description: The user name.
-            asm_password:
+            asm_oracle_home:
               title: ""
               type: string
+              description: ""
+            asm_user:
+              title: ""
+              type: string
+              description: ""
           description: ""
         destination_schema:
           type: object
@@ -17048,6 +17447,10 @@ components:
         config:
           type: object
           properties:
+            salesforce_security_token:
+              title: ""
+              type: string
+              description: The Pardot user's Salesforce SSO Account Security Token.
             password:
               title: ""
               type: string
@@ -17059,7 +17462,7 @@ components:
             user_key:
               title: ""
               type: string
-              description: The Pardot user's API key.
+              description: ""
             api_version:
               title: ""
               type: object
@@ -17067,11 +17470,34 @@ components:
               enum:
               - V3
               - V4
+            time_zone:
+              title: ""
+              type: string
+              description: The time zone configured in your Pardot instance. An empty
+                value defaults to `UTC+00:00`.
             email:
               title: ""
               type: string
               description: The email of the Pardot user.
+            rest_api_limit:
+              title: ""
+              type: integer
+              description: 'The number of API calls that the connector should not
+                exceed in a day. Default REST API call limit per day: 150,000.'
+              format: int32
           description: ""
+        auth:
+          type: object
+          properties:
+            client_access:
+              type: object
+              properties:
+                client_secret:
+                  type: string
+                  description: Client Secret of your client application.
+                client_id:
+                  type: string
+                  description: Client ID of your client application.
         destination_schema:
           type: object
           properties:
@@ -17402,12 +17828,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -17511,12 +17931,6 @@ components:
               type: integer
               description: SSH port, specify only to connect via an SSH tunnel.
               format: int32
-            heroku_rds_hosted:
-              title: ""
-              type: object
-              enum:
-              - YES
-              - NO
             port:
               title: ""
               type: integer
@@ -17795,6 +18209,38 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/reddit_ads_config_V2'
+    ringcentral_config_V2:
+      properties:
+        config:
+          type: object
+          description: ""
+        auth:
+          type: object
+          properties:
+            access_token:
+              type: string
+              description: The long-lived Access token carries the information necessary
+                to access API resources
+            refresh_token:
+              type: string
+              description: The long-lived Refresh token carry the information necessary
+                to get a new access token for API resources.
+            realm_id:
+              type: string
+              description: Realm ID of your application.
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    ringcentral_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/ringcentral_config_V2'
     s3_config_V2:
       properties:
         config:
@@ -17883,6 +18329,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -18013,6 +18460,7 @@ components:
               - AWS_US_EAST_1
               - AWS_US_EAST_2
               - AWS_US_WEST_2
+              - AWS_AP_SOUTHEAST_1
               - AWS_AP_SOUTHEAST_2
               - AWS_EU_CENTRAL_1
               - AWS_EU_WEST_1
@@ -18186,6 +18634,40 @@ components:
       allOf:
       - $ref: '#/components/schemas/NewConnectorRequestV2'
       - $ref: '#/components/schemas/salesforce_sandbox_config_V2'
+    salesloft_config_V2:
+      properties:
+        config:
+          type: object
+          properties:
+            client_secret:
+              title: ""
+              type: string
+              description: '`Client Secret` of your Salesloft client application.'
+            client_id:
+              title: ""
+              type: string
+              description: '`Client ID` of your Salesloft client application.'
+          description: ""
+        auth:
+          type: object
+          properties:
+            refresh_token:
+              type: string
+              description: The long-lived Refresh token carry the information necessary
+                to get a new access token for API resources.
+        destination_schema:
+          type: object
+          properties:
+            name:
+              title: Destination schema name
+              type: string
+              description: Destination schema name. Schema name is permanent and cannot
+                be changed after connection creation
+          description: ""
+    salesloft_NewConnectorRequestV2:
+      allOf:
+      - $ref: '#/components/schemas/NewConnectorRequestV2'
+      - $ref: '#/components/schemas/salesloft_config_V2'
     sap_business_by_design_config_V2:
       properties:
         config:
@@ -18288,6 +18770,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -18480,6 +18963,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             delimiter:
               title: ""
               type: string
@@ -18634,6 +19118,7 @@ components:
               - tsv
               - avro
               - parquet
+              - xml
             on_error:
               title: ""
               type: object
@@ -18709,6 +19194,10 @@ components:
               title: ""
               type: string
               description: The Shopify shop name. Can be found in the URL before **.myshopify.com**.
+            api_access_token:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -19063,15 +19552,15 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
-              title: ""
-              type: string
-              description: ""
             user:
               title: ""
               type: string
               description: The user name.  For Azure Databases, the format must be
                 `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -19114,6 +19603,7 @@ components:
             agent_user:
               title: ""
               type: string
+              description: The agent's username.
             connection_type:
               title: ""
               type: object
@@ -19125,12 +19615,14 @@ components:
             agent_password:
               title: ""
               type: string
+              description: The password for the agent user.
             always_encrypted:
               title: ""
               type: boolean
             agent_public_cert:
               title: ""
               type: string
+              description: The public certificate generated by the agent.
             tunnel_user:
               title: ""
               type: string
@@ -19165,19 +19657,23 @@ components:
             agent_port:
               title: ""
               type: integer
+              description: The port that the agent has open for Fivetran's connection.
+                Default value is 4343.
               format: int32
             agent_host:
               title: ""
               type: string
-            sap_user:
-              title: ""
-              type: string
-              description: ""
+              description: The host address of the machine running the agent. Often
+                the same as the DB host.
             user:
               title: ""
               type: string
               description: The user name.  For Azure Databases, the format must be
                 `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -19280,15 +19776,15 @@ components:
               title: ""
               type: string
               description: ""
-            sap_user:
-              title: ""
-              type: string
-              description: ""
             user:
               title: ""
               type: string
               description: The user name.  For Azure Databases, the format must be
                 `user@domain`.
+            sap_schema:
+              title: ""
+              type: string
+              description: ""
           description: ""
         auth:
           type: object
@@ -20546,6 +21042,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/confluent_cloud_config_V2'
+    cosmos_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/cosmos_config_V2'
     coupa_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20590,6 +21090,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/dynamodb_config_V2'
+    elastic_cloud_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/elastic_cloud_config_V2'
     eloqua_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20598,6 +21102,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/email_config_V2'
+    es_self_hosted_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/es_self_hosted_config_V2'
     facebook_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20626,6 +21134,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/freshdesk_config_V2'
+    freshservice_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/freshservice_config_V2'
     front_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20858,10 +21370,22 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/netsuite_suiteanalytics_config_V2'
+    okta_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/okta_config_V2'
     one_drive_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/one_drive_config_V2'
+    opendistro_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/opendistro_config_V2'
+    opensearch_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/opensearch_config_V2'
     optimizely_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20874,6 +21398,18 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/oracle_ebs_config_V2'
+    oracle_fusion_cloud_apps_crm_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_crm_config_V2'
+    oracle_fusion_cloud_apps_fscm_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_fscm_config_V2'
+    oracle_fusion_cloud_apps_hcm_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/oracle_fusion_cloud_apps_hcm_config_V2'
     oracle_hva_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20950,6 +21486,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/reddit_ads_config_V2'
+    ringcentral_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/ringcentral_config_V2'
     s3_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
@@ -20974,6 +21514,10 @@ components:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
       - $ref: '#/components/schemas/salesforce_sandbox_config_V2'
+    salesloft_ConnectorResponseV2:
+      allOf:
+      - $ref: '#/components/schemas/ConnectorResponseV2'
+      - $ref: '#/components/schemas/salesloft_config_V2'
     sap_business_by_design_ConnectorResponseV2:
       allOf:
       - $ref: '#/components/schemas/ConnectorResponseV2'
