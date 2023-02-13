@@ -30,7 +30,7 @@ paths:
         description: Paging cursor, [read more about pagination](https://fivetran.com/docs/rest-api/pagination)
         required: false
         schema:
-          type: string
+          type: string123131
       - name: limit
         in: query
         description: Number of records to fetch per page. Accepts a number in the

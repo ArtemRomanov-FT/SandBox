@@ -13,7 +13,7 @@ security:
 paths:
   /v1/teams/{teamId}/connectors:
   get:
-      tags:11111
+      tags:1111112331
       - Team Management
       summary: List all connector memberships
       description: Returns connector memberships within a team.
