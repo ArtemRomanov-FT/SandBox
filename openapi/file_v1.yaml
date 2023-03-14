@@ -14,7 +14,7 @@ paths:
   /v1/teams/{teamId}/connectors:
     get:
       tags:
-      - Team Management test
+      - Team Management test  111
       summary: List all connector memberships
       description: Returns connector memberships within a team.
       operationId: get_team_memberships_in_connectors
