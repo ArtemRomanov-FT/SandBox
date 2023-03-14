@@ -18,7 +18,7 @@ paths:
       summary: List all connector memberships
       description: Returns connector memberships within a team.
       operationId: get_team_memberships_in_connectors
-      parameters:
+      parameters: test
       - name: teamId
         in: path
         description: The unique identifier for the team within the account
