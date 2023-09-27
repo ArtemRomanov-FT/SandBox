@@ -7,7 +7,7 @@
     { "environment": "prod", "groupId": "dawning_assistance" } //jtalmi/Production
   ],
   "exclude": [
-    {"environment": "staging" /* Remove the rule when you are ready to transfer the production cohorts to the staging environment */}
+    {"environment": "staging" /* Rem1ove the rule when you are ready to transfer the production cohorts to the staging environment */}
   ],
   "serviceIds": ["braintree", "braintree_sandbox"],
   "reasonToAdd": "Internal use only.",
