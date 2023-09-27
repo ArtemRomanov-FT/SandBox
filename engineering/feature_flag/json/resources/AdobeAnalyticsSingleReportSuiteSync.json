@@ -1,0 +1,19 @@
+{
+  "type": "HackFix",
+  "description": "Syncing data only for one specific report suite in each sync",
+  "issues": [466950],
+  "include": [
+    {
+      "environment": "prod",
+      "groupId":  "1k56c2c4xlti6",
+      "connector": "adobe_analytics_s188"
+    },
+    {
+      "environment": "prod",
+      "groupId": "minister_lat",
+      "connector": "src_adobe_analytics"
+    }
+  ],
+  "serviceIds": ["adobe_analytics"],
+  "reasonToAdd": "Prevent situations when sync gets stuck or rescheduled because of 429 error"
+}
