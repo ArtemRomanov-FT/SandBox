@@ -1,0 +1,17 @@
+{
+  "type": "HackFix",
+  "description": "reduce max days to fetch for Campaign Manager connector",
+  "issues": [87913],
+  "include": [
+    { "environment": "prod", "groupId": "liturgy_hazing", "service": "double_click_campaign_manager" },
+    { "environment": "prod", "groupId": "semisweet_bower", "service": "double_click_campaign_manager" },
+    { "environment": "prod", "groupId": "harmonious_stereo", "connector": "double_click_campaign_manager.double_click_campaign_manager_standard"}, //L_Oreal/Warehouse/double_click_campaign_manager/double_click_campaign_manager.double_click_campaign_manager_standard
+    { "environment": "prod", "groupId": "harmonious_stereo", "connector": "double_click_campaign_manager.double_click_campaign_manager_standard_12"}, //L_Oreal/Warehouse/double_click_campaign_manager/double_click_campaign_manager.double_click_campaign_manager_standard_12
+    { "environment": "prod", "groupId": "grant_elevator", "service": "double_click_campaign_manager" }, // Dentsu_1/Hilton_BigQuery
+    { "environment": "prod", "groupId": "ashen_eulogy", "service": "double_click_campaign_manager" }, // redventures/b821_HomeServices
+    { "environment": "prod", "groupId": "harmonious_stereo", "connector": "double_click_campaign_manager.double_click_campaign_manager_reach_freq"}, //L_Oreal/Warehouse/double_click_campaign_manager/double_click_campaign_manager.double_click_campaign_manager_reach_freq
+    { "environment": "prod", "groupId": "coined_uncapped", "connector": "regn_5t_cm.reach_freq_month"} //MerkleESG/BQ_REGN/double_click_campaign_manager/regn_5t_cm.reach_freq_month
+  ],
+  "serviceIds": ["double_click_campaign_manager"],
+  "reasonToAdd": "Huge amount of data in the report is received. Data cannot be processed in one request. We have to reduce amount of days in the report."
+}
