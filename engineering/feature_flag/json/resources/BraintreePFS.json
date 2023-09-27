@@ -1,0 +1,27 @@
+{
+  "type": "Rollout",
+  "description": "PFS for incremental endpoints in braintree",
+  "issues": [457440],
+  "include": [
+    { "environment": "prod", "groupId": "1k56c2c4xlti6" }, //Fivetran/Testing
+    { "environment": "prod", "groupId": "dawning_assistance" } //jtalmi/Production
+  ],
+  "exclude": [
+    {"environment": "staging" /* Remove the rule when you are ready to transfer the production cohorts to the staging environment */}
+  ],
+  "serviceIds": ["braintree", "braintree_sandbox"],
+  "reasonToAdd": "Internal use only.",
+  "cohort": {
+    "rolloutMode": "group",
+    "rollouts": {
+      "internal": { "duration" : "PT0H", "freezeAfterRollout": false },
+      "lemmings": { "duration": "PT24H", "freezeAfterRollout": false },
+      "preview": { "duration": "PT24H", "freezeAfterRollout": false },
+      "worrywarts": { "duration": "PT24H", "freezeAfterRollout": false }
+    },
+    "slackChannels": [
+      "#team_raman_notifications",
+      "@shivam.bansal"
+    ]
+  }
+}
